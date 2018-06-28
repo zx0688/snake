@@ -1,14 +1,14 @@
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.layout.Pane?>
 <?import sample.Snake?>
-<Pane prefWidth="800" prefHeight="600"
-      xmlns="http://javafx.com/javafx/8.0.60"
-      xmlns:fx="http://javafx.com/fxml/1">
+<?import javafx.scene.layout.AnchorPane?>
+<AnchorPane prefWidth="800" prefHeight="600"
+                xmlns="http://javafx.com/javafx/8.0.60"
+                xmlns:fx="http://javafx.com/fxml/1"
+                fx:controller="sample.Controller">
 
     <children>
-       <Snake fx:id="snake">
 
-       </Snake>
     </children>
 
-</Pane>
+</AncPane>

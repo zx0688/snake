@@ -14,6 +14,7 @@ import java.util.Map;
 public class Main extends Application {
 
     private static Map<String, Image> imageCache = new HashMap<>();
+    private GameField gameField;
 
     public static Image getImage(String name) {
         
@@ -30,12 +31,15 @@ public class Main extends Application {
     public void start(Stage primaryStage) throws Exception {
 
         FXMLLoader loader = new FXMLLoader(getClass().getResource("sample.fxml"));
-        loader.setController(this);
+
         Parent root = loader.load();
 
         primaryStage.setTitle("Snake");
         primaryStage.setScene(new Scene(root, 800, 640));
         primaryStage.show();
+
+        gameField = new GameField();
+
 
         AnimationTimer timer = new AnimationTimer() {
             @Override
